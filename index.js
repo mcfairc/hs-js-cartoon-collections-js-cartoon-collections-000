@@ -25,15 +25,15 @@ function longPlaneteerCalls(words) {
  }
 }
 
-function findTheCheese (foods) {
-  var cheeses = ["cheddar", "gouda", "camembert"];
 
-  for (var i = 0; i < foods.length; i++) {
-    for (var j = 0; j < cheeses.length; j++) {
-      if ( cheeses[j]=== foods[i] ) {
-        return foods[i];
+function findTheCheese (array) {
+  var cheeses = ["cheddar", "gouda", "camembert"];
+    for (var i = 0; i < array.length; i++) {
+      for (var j = 0; j < cheeses.length; j++) {
+      if (array[i] === cheeses[j]) {
+        return array[i];
     }
+   }
   }
-}
     return "no cheese!"
 }
